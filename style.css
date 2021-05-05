@@ -1,0 +1,89 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  background-color:#E8F8F5;
+}
+body {
+  background-color:#E8F8F5;
+}
+#monthrn {
+  padding: 20px;
+  font-size: 35px;
+  color: blue;
+  border: 5px dotted;
+  width: 30%;
+}
+#container {
+  /* width: width of .day + 2x margin of .day */
+  width: 630px;
+}
+#weekdays {
+  width: 99.7%;
+  display: flex;
+  border: 1px solid;
+  color: red;
+  background-color: white;
+}
+#weekday1, #weekday2, #weekday3, #weekday4, #weekday5, #weekday6, #weekday7 {
+  width: 90px;
+  padding: 10px;
+  border: 1px solid;
+  text-align: center;
+}
+#calendar {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  width: 90px;
+  padding-top: 15px;
+  padding-left: 35px;
+  padding-bottom: 15px;
+  padding-right: 35px;
+  text-align: center;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid;
+}
+#dayrn{
+  background-color: #F08080;
+}
+#addevents {
+  display:none;
+}
+#groupevents {
+  display:none;
+}
+#editevents {
+  display: none;
+}
+#logoutbutton {
+  display: none;
+}
+#addevent {
+  display: none;
+}
+#calendar {
+  margin: auto;
+}
+.day {
+  display: flex;
+  flex-wrap: wrap;
+}
+#groupevent {
+  display: none;
+}
+#categorybuttons {
+  display: none;
+}
+#displayevents {
+  display: none;
+}
+button {
+  background-color: #5F9EA0;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  margin: 4px 2px;
+}

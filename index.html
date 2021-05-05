@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Event Calendar</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  <body>
+    <div id="login" class="login">
+      <form>
+        <input type="text" id="username" placeholder="Username"/>
+        <input type="password" id="password" placeholder="Password"/>
+        <button id="loginbutton">Log In</button>
+      </form>
+    </div>
+
+    <div id="signup" class="signup">
+      <form>
+        <input type="text" id="signupusername" placeholder="Username"/>
+        <input type="password" id="signuppassword" placeholder="Password"/>
+        <button id="signupbutton">Sign Up</button>
+      </form>
+    </div>
+    <div id="logout" class="logout">
+      <button id="logoutbutton">Log Out</button>
+      <br>
+    </div>
+    <div id="container">
+      <div id="header">
+        <div id="monthrn"></div>
+        <div>
+          <button id="backButton">Previous Month</button>
+          <button id="nextButton">Next Month</button>
+        </div>
+      </div>
+
+      <div id="weekdays">
+        <div id = "weekday1">Sunday</div>
+        <div id = "weekday2">Monday</div>
+        <div id = "weekday3">Tuesday</div>
+        <div id = "weekday4">Wednesday</div>
+        <div id = "weekday5">Thursday</div>
+        <div id = "weekday6">Friday</div>
+        <div id = "weekday7">Saturday</div>
+      </div>
+      <br>
+      <div id="calendar"></div>
+      <br>
+      <button type="button" id="addevent">Add Event</button>
+      <button type="button" id="groupevent">Add Group Event</button>
+      <br>
+      <div id = "categorybuttons">
+        <form>
+        <input type="radio" name="button" value = "All" id = "all" checked = "checked">All
+        <input type="radio" name="button" value = "Work" id = "work">Work
+        <input type="radio" name="button" value = "School" id = "school">School
+        <input type="radio" name="button" value = "Social" id = "social">Social
+        </form>
+      </div>
+      <div id = "displayevents">
+      <table>
+        <tr>
+        <th>Event Name</th>
+        <th>Date</th>
+        <th>Time</th>
+        </tr>
+        <tbody id="data"></tbody>
+      </table>
+      </div>
+
+      <div id="addevents">
+        <form id = "addeventsform">
+          Event Title: <input type="text" id="eventtitle" required>
+          Event Date: <input type="date" id="eventdate" required>
+          <br>
+          Event Time: <input type="time" id="eventtime" required>
+          <label for="eventcategory">Select a Category:</label>
+          <select name="category" id="eventcategory" required>
+            <option value = "">Choose</option>
+            <option value="None">None</option>
+            <option value="Work">Work</option>
+            <option value="Social">Social</option>
+             <option value="School">School</option>
+          </select>
+          </form>
+          <button type="button" id = "canceleventbutton">Cancel</button>
+          <button id="addeventbutton">Add Event</button>
+        </div>
+
+        <div id="groupevents">
+          <form id = "addgroupeventsform">
+          Group Event Title: <input type="text" id="groupeventtitle" required>
+          Group Event Date: <input type="date" id="groupeventdate" required>
+          <br>
+          Group Event Time: <input type="time" id="groupeventtime" required>
+          <label for="groupeventcategory">Select a Category:</label>
+          <select name="category" id="groupeventcategory" required>
+            <option value = "">Choose</option>
+            <option value="None">None</option>
+          <option value="Work">Work</option>
+          <option value="Social">Social</option>
+           <option value="School">School</option>
+          </select>
+          </form>
+      <button type="button" id = "cancelgroupeventbutton">Cancel</button>
+      <button id="addgroupeventbutton">Add Event</button>
+      </div>
+
+      <div id="editevents">
+        <form id = "editeventsform">
+        Edit Event Title: <input type="text" id="editeventtitle" required>
+        Edit Event Date: <input type="date" id="editeventdate" required>
+        <br>
+        Edit Event Time: <input type="time" id="editeventtime" required>
+        <label for="editeventcategory">Select a Category:</label>
+        <select name="category" id="editeventcategory" required>
+          <option value = "">Choose</option>
+          <option value="None">None</option>
+          <option value="Work">Work</option>
+          <option value="Social">Social</option>
+           <option value="School">School</option>
+        </select>
+        </form>
+    <button type="button" id = "cancelediteventbutton">Cancel</button>
+    <button id="editeventbutton">Edit Event</button>
+    </div>
+      
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./eventcalendar1.js"></script>
+    <script src="./eventcalendar2.js"></script>
+  </body>
+</html>
