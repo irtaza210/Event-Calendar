@@ -1,16 +1,4 @@
 
-/* * * * * * * * * * * * * * * * * * * *\
- *               Module 4              *
- *      Calendar Helper Functions      *
- *                                     *
- *        by Shane Carr '15 (TA)       *
- *  Washington University in St. Louis *
- *    Department of Computer Science   *
- *               CSE 330S              *
- *                                     *
- *      Last Update: October 2017      *
-\* * * * * * * * * * * * * * * * * * * */
-
 (function () {
 	"use strict";
 	/* Date.prototype.deltaDays(n)
